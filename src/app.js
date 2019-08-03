@@ -33,9 +33,9 @@ const NotFoundPage = () => (
 const Header = () => (
     <header>
         <div>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/cart">Cart</NavLink>
-            <NavLink to="/help">Help</NavLink> 
+            <NavLink to="/" activeClassName="isActive">Home</NavLink>
+            <NavLink to="/cart" activeClassName="isActive">Cart</NavLink>
+            <NavLink to="/help" activeClassName="isActive">Help</NavLink> 
         </div>
         <h1>My Book Store</h1>
     </header>
