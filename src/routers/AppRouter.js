@@ -1,21 +1,35 @@
-// import React from 'react';
-// import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
-// import Homepage from '../pages/Homepage'
-// import CartPage from '../pages/cartpage'
-// import CheckoutPage from '../pages/checkoutpage'
-// import OrdersPage from '../pages/orderspage'
+import HomePage from '../pages/homepage';
+import CartPage from '../pages/cartpage';
+import HelpPage from '../pages/helppage';
+import NotFoundPage from '../pages/notfoundpage';
 
-// const Router =  () => (
-//     <BrowserRouter>
-//         <div>
-//             <Route exact path='/' component={Homepage} />
-//             <Route path='/cart' component={CartPage} />
-//             <Route exact path='/checkout' component={CheckoutPage} />
-//             <Route path='/orders/:id' component={OrdersPage} />
-//         </div>
-//     </BrowserRouter>
-    
-// );
+const Header = () => (
+  <header>
+      <div>
+          <NavLink to="/" activeClassName="is-active" exact={true}>Home</NavLink>
+          <NavLink to="/cart" activeClassName="is-active">Cart</NavLink>
+          <NavLink to="/help" activeClassName="is-active">Help</NavLink> 
+      </div>
+      <h1>My Book Store</h1>
+  </header>
+);
 
-// export default Router;
+const AppRouter = () => (
+  <BrowserRouter>
+      <div>
+          <Header/>
+          <Switch>
+              <Route exact={true} path="/" component={HomePage}/>
+              <Route exact path="/cart" component={CartPage}/>
+              <Route exact path="/help" component={HelpPage}/>
+              <Route component={NotFoundPage}/>
+          </Switch>
+      </div> 
+  </BrowserRouter>
+);
+
+export default AppRouter;
