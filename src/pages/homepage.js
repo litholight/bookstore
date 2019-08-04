@@ -1,8 +1,11 @@
 import React from 'react';
+import ProductListing from '../components/ProductListing';
+import data from '../data/products.json';
 
-export default () => (
+export default (props) => (
     
     <div>
         <h2>Homepage</h2>
+        <ProductListing product={ data.products } />
     </div>
 );

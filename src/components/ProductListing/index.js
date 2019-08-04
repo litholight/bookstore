@@ -1,10 +1,13 @@
 import React from 'react';
+import ProductListItem from '../ProductListItem'
 
 export default (props) => {
     return(
         <div>
-            Book One
-            {props.products.name}
+            {
+                props.product.map( product => 
+                    <ProductListItem product={product} />)
+            }
         </div>
     );
 };
