@@ -5,7 +5,7 @@ import data from '../data/products.json';
 export default (props) => (
     
     <div>
-        <h2>Homepage</h2>
+        <h2>Currently for sale</h2>
         <ProductListing product={ data.products } />
     </div>
 );

@@ -3,7 +3,7 @@ import ProductListItem from '../ProductListItem'
 
 export default (props) => {
     return(
-        <div>
+        <div className='product-listing'>
             {
                 props.product.map( product => 
                     <ProductListItem product={product} />)

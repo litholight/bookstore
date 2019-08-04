@@ -14,13 +14,13 @@ const Header = () => (
           <NavLink to="/cart" activeClassName="is-active">Cart</NavLink>
           <NavLink to="/help" activeClassName="is-active">Help</NavLink> 
       </div>
-      <h1>My Book Store</h1>
+      <h1>Sophia's Bookstore</h1>
   </header>
 );
 
 const AppRouter = () => (
   <BrowserRouter>
-      <div>
+      <div className='page-container'>
           <Header/>
           <Switch>
               <Route exact={true} path="/" component={HomePage}/>

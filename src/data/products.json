@@ -25,6 +25,58 @@
           "0", "+"
         ],
         "price": 10.48
+      },
+      {
+        "id": 1,
+        "name": "Philosophy of Science: The Central Issues",
+        "description": "Philosophy of Science: The Central Issues offers a balanced and comprehensive survey to the main currents in twentieth-century philosophy of science.",
+        "keywords": [
+          "Science", "Philosophy"
+        ],
+        "image": "philoscience.jpg",
+        "age": [
+          "0", "+"
+        ],
+        "price": 10.48
+      },
+      {
+        "id": 2,
+        "name": "Uncommon Dissent",
+        "description": "Uncommon Dissent: Intellectuals Who Find Darwinism Unconvincing",
+        "keywords": [
+          "Intelligent Design Creationism, Science"
+        ],
+        "image": "uncommon.jpg",
+        "age": [
+          "0", "+"
+        ],
+        "price": 10.48
+      },
+      {
+        "id": 1,
+        "name": "Philosophy of Science: The Central Issues",
+        "description": "Philosophy of Science: The Central Issues offers a balanced and comprehensive survey to the main currents in twentieth-century philosophy of science.",
+        "keywords": [
+          "Science", "Philosophy"
+        ],
+        "image": "philoscience.jpg",
+        "age": [
+          "0", "+"
+        ],
+        "price": 10.48
+      },
+      {
+        "id": 2,
+        "name": "Uncommon Dissent",
+        "description": "Uncommon Dissent: Intellectuals Who Find Darwinism Unconvincing",
+        "keywords": [
+          "Intelligent Design Creationism, Science"
+        ],
+        "image": "uncommon.jpg",
+        "age": [
+          "0", "+"
+        ],
+        "price": 10.48
       }
       
     ]
