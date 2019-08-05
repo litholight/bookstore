@@ -1,26 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { NavLink } from 'react-router-dom'
 
 import HomePage from '../pages/homepage';
 import CartPage from '../pages/cartpage';
 import HelpPage from '../pages/helppage';
 import NotFoundPage from '../pages/notfoundpage';
-
-const Header = () => (
-  <header>
-      <div>
-        <img
-            height={60}
-            src= { '/images/Stoneburner-Software-2-cropped.png' }
-        />
-          <NavLink to="/" activeClassName="is-active" exact={true}>Home</NavLink>
-          <NavLink to="/cart" activeClassName="is-active">Cart</NavLink>
-          <NavLink to="/help" activeClassName="is-active">Help</NavLink> 
-      </div>
-      <h1>Sophia's Bookstore</h1>
-  </header>
-);
+import Header from '../components/Header/Header'
 
 const AppRouter = () => (
   <BrowserRouter>
