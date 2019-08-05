@@ -10,6 +10,10 @@ import NotFoundPage from '../pages/notfoundpage';
 const Header = () => (
   <header>
       <div>
+        <img
+            height={60}
+            src= { '/images/Stoneburner-Software-2-cropped.png' }
+        />
           <NavLink to="/" activeClassName="is-active" exact={true}>Home</NavLink>
           <NavLink to="/cart" activeClassName="is-active">Cart</NavLink>
           <NavLink to="/help" activeClassName="is-active">Help</NavLink> 
